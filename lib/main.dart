@@ -96,9 +96,10 @@ class Home extends StatelessWidget {
                                     ),
                                     Image(
                                       image: AssetImage(
-                                        "assets/Group 3.png",
+                                        "assets/slider 1.png",
                                       ),
                                     ),
+                                    SizedBox(height: 20),
                                     Row(
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       children: <Widget>[
@@ -136,7 +137,47 @@ class Home extends StatelessWidget {
                             child: Container(
                               width: 163,
                               height: 168 / 1.2,
-                              child: Text('A card that can be tapped'),
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: <Widget>[
+                                    Text(
+                                      "Sports App",
+                                      style: TextStyle(
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                    Image(
+                                      image: AssetImage(
+                                        "assets/Group 3.png",
+                                      ),
+                                    ),
+                                    SizedBox(height: 20),
+                                    Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      children: <Widget>[
+                                        Text(
+                                          "Progress",
+                                          style: TextStyle(
+                                            fontSize: 12.0,
+                                          ),
+                                        ),
+                                        Text("76%",
+                                            style: TextStyle(
+                                              fontSize: 12.0,
+                                            ))
+                                      ],
+                                    ),
+                                    Image(
+                                      image: AssetImage(
+                                        "assets/slider 2.png",
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
                             ),
                           ),
                         ),
