@@ -59,7 +59,89 @@ class Home extends StatelessWidget {
                     style: TextStyle(
                       color: Color.fromRGBO(60, 175, 235, 1),
                       fontSize: 18,
+                      fontWeight: FontWeight.bold,
                     ),
+                  )
+                ],
+              ),
+              SizedBox(height: 15.0),
+              // this is start of card one
+              
+              Column(
+                children: <Widget>[
+                  Row(
+                    children: <Widget>[
+                      Container(
+                        child: Card(
+                          child: InkWell(
+                            splashColor: Colors.blue.withAlpha(30),
+                            onTap: () {
+                              print('Card tapped.');
+                            },
+                            // made column for widgets to put
+                            child: Container(
+                              width: 163,
+                              height: 168 / 1.2,
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: <Widget>[
+                                    Text(
+                                      "Cosmo Jet",
+                                      style: TextStyle(
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                    Image(
+                                      image: AssetImage(
+                                        "assets/Group 3.png",
+                                      ),
+                                    ),
+                                    Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      children: <Widget>[
+                                        Text(
+                                          "Progress",
+                                          style: TextStyle(
+                                            fontSize: 12.0,
+                                          ),
+                                        ),
+                                        Text("28%",
+                                            style: TextStyle(
+                                              fontSize: 12.0,
+                                            ))
+                                      ],
+                                    ),
+                                    Image(
+                                      image: AssetImage(
+                                        "assets/Group 2.png",
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        child: Card(
+                          child: InkWell(
+                            splashColor: Colors.blue.withAlpha(30),
+                            onTap: () {
+                              print('Card tapped.');
+                            },
+                            child: Container(
+                              width: 163,
+                              height: 168 / 1.2,
+                              child: Text('A card that can be tapped'),
+                            ),
+                          ),
+                        ),
+                      )
+                    ],
                   )
                 ],
               )
