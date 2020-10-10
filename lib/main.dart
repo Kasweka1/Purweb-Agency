@@ -370,12 +370,20 @@ class Home extends StatelessWidget {
       ),
       bottomNavigationBar: BottomAppBar(
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            IconButton(icon: Icon(Icons.home), onPressed: () {}),
-            IconButton(icon: Icon(Icons.chat), onPressed: () {}),
-            IconButton(icon: Icon(Icons.alarm), onPressed: () {}),
-            IconButton(icon: Icon(Icons.person), onPressed: () {}),
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: <Widget>[
+            IconButton(
+                icon: Icon(Icons.home, color: Colors.blue[600], size: 30,),
+                onPressed: () {}),
+            IconButton(icon: Icon(Icons.chat, size: 30), onPressed: () {}),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: IconButton(
+                  icon: Icon(Icons.add_circle, color: Colors.blue[600], size: 45),
+                  onPressed: () {}),
+            ),
+            IconButton(icon: Icon(Icons.phone, size: 30), onPressed: () {}),
+            IconButton(icon: Icon(Icons.person, size: 30), onPressed: () {}),
           ],
         ),
       ),
