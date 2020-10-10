@@ -95,13 +95,76 @@ class _CosmoJetState extends State<CosmoJet> {
                 ),
               ),
               Container(
-                  child: Image(
-                image: AssetImage(
-                  "assets/avatars.png",
+                child: Image(
+                  image: AssetImage(
+                    "assets/avatars.png",
+                  ),
                 ),
-              ))
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Text(
+                "Tasks",
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 32,
+                  fontWeight: FontWeight.bold,
+                  letterSpacing: 1.15,
+                ),
+              ),
+              Card(
+                child: InkWell(
+                  splashColor: Colors.blue.withAlpha(30),
+                  onTap: () {},
+                  child: Container(
+                    width: 340,
+                    height: 50,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: <Widget>[
+                          Text(
+                            "To Do",
+                            style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Image(image: AssetImage("assets/plus.png"))
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
             ],
           ),
+        ),
+      ),
+      bottomNavigationBar: BottomAppBar(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: <Widget>[
+            IconButton(
+                icon: Icon(
+                  Icons.home,
+                  color: Colors.blue[600],
+                  size: 30,
+                ),
+                onPressed: () {}),
+            IconButton(icon: Icon(Icons.chat, size: 30), onPressed: () {}),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: IconButton(
+                  icon:
+                      Icon(Icons.add_circle, color: Colors.blue[600], size: 45),
+                  onPressed: () {}),
+            ),
+            IconButton(icon: Icon(Icons.phone, size: 30), onPressed: () {}),
+            IconButton(icon: Icon(Icons.person, size: 30), onPressed: () {}),
+          ],
         ),
       ),
     );
