@@ -66,7 +66,7 @@ class Home extends StatelessWidget {
               ),
               SizedBox(height: 15.0),
               // this is start of card one
-              
+
               Column(
                 children: <Widget>[
                   Row(
@@ -85,7 +85,8 @@ class Home extends StatelessWidget {
                               child: Padding(
                                 padding: const EdgeInsets.all(8.0),
                                 child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: <Widget>[
                                     Text(
@@ -96,12 +97,13 @@ class Home extends StatelessWidget {
                                     ),
                                     Image(
                                       image: AssetImage(
-                                        "assets/slider 1.png",
+                                        "assets/Group 3.png",
                                       ),
                                     ),
                                     SizedBox(height: 20),
                                     Row(
-                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
                                       children: <Widget>[
                                         Text(
                                           "Progress",
@@ -117,7 +119,7 @@ class Home extends StatelessWidget {
                                     ),
                                     Image(
                                       image: AssetImage(
-                                        "assets/Group 2.png",
+                                        "assets/slider 1.png",
                                       ),
                                     ),
                                   ],
@@ -140,7 +142,8 @@ class Home extends StatelessWidget {
                               child: Padding(
                                 padding: const EdgeInsets.all(8.0),
                                 child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: <Widget>[
                                     Text(
@@ -156,7 +159,8 @@ class Home extends StatelessWidget {
                                     ),
                                     SizedBox(height: 20),
                                     Row(
-                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
                                       children: <Widget>[
                                         Text(
                                           "Progress",
@@ -183,11 +187,196 @@ class Home extends StatelessWidget {
                         ),
                       )
                     ],
+                  ),
+                  Row(
+                    children: <Widget>[
+                      Container(
+                        child: Card(
+                          child: InkWell(
+                            splashColor: Colors.blue.withAlpha(30),
+                            onTap: () {
+                              print('Card tapped.');
+                            },
+                            // made column for widgets to put
+                            child: Container(
+                              width: 163,
+                              height: 168 / 1.2,
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Column(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: <Widget>[
+                                    Text(
+                                      "Bookinist",
+                                      style: TextStyle(
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                    Image(
+                                      image: AssetImage(
+                                        "assets/Group 3.png",
+                                      ),
+                                    ),
+                                    SizedBox(height: 20),
+                                    Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      children: <Widget>[
+                                        Text(
+                                          "Progress",
+                                          style: TextStyle(
+                                            fontSize: 12.0,
+                                          ),
+                                        ),
+                                        Text("56%",
+                                            style: TextStyle(
+                                              fontSize: 12.0,
+                                            ))
+                                      ],
+                                    ),
+                                    Image(
+                                      image: AssetImage(
+                                        "assets/slider 3.png",
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        child: Card(
+                          child: InkWell(
+                            splashColor: Colors.blue.withAlpha(30),
+                            onTap: () {
+                              print('Card tapped.');
+                            },
+                            child: Container(
+                              width: 163,
+                              height: 168 / 1.2,
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Column(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: <Widget>[
+                                    Text(
+                                      "Music Player",
+                                      style: TextStyle(
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                    Image(
+                                      image: AssetImage(
+                                        "assets/Group 3.png",
+                                      ),
+                                    ),
+                                    SizedBox(height: 20),
+                                    Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      children: <Widget>[
+                                        Text(
+                                          "Progress",
+                                          style: TextStyle(
+                                            fontSize: 12.0,
+                                          ),
+                                        ),
+                                        Text("51%",
+                                            style: TextStyle(
+                                              fontSize: 12.0,
+                                            ))
+                                      ],
+                                    ),
+                                    Image(
+                                      image: AssetImage(
+                                        "assets/slider 4.png",
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
                   )
                 ],
-              )
+              ),
+              SizedBox(height: 10),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  Text(
+                    "Upcoming Events",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 25,
+                      fontWeight: FontWeight.bold,
+                      letterSpacing: 1.15,
+                    ),
+                  ),
+                  Text(
+                    "see more",
+                    style: TextStyle(
+                      color: Color.fromRGBO(60, 175, 235, 1),
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  )
+                ],
+              ),
+              Card(
+                child: InkWell(
+                  splashColor: Colors.blue.withAlpha(30),
+                  child: Container(
+                      width: 350,
+                      height: 77,
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Row(
+                          children: <Widget>[
+                            Image(image: AssetImage("assets/Dribble Logo.png")),
+                            SizedBox(width: 15),
+                            Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  Text(
+                                    "Dribble Meeting 2020",
+                                    style: TextStyle(
+                                      fontSize: 20,
+                                    ),
+                                  ),
+                                  Text("12 July 2020",
+                                      style: TextStyle(
+                                        color: Colors.grey[700],
+                                        fontSize: 17,
+                                      )),
+                                ]),
+                          ],
+                        ),
+                      )),
+                ),
+              ),
             ],
           ),
+        ),
+      ),
+      bottomNavigationBar: BottomAppBar(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            IconButton(icon: Icon(Icons.home), onPressed: () {}),
+            IconButton(icon: Icon(Icons.chat), onPressed: () {}),
+            IconButton(icon: Icon(Icons.alarm), onPressed: () {}),
+            IconButton(icon: Icon(Icons.person), onPressed: () {}),
+          ],
         ),
       ),
     );
