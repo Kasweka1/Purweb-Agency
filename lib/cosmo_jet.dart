@@ -29,54 +29,79 @@ class _CosmoJetState extends State<CosmoJet> {
           )
         ],
       ),
-      body: Container(
-        child: Column(
-          children: <Widget>[
-            SizedBox(height: 10),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: <Widget>[
-                Text(
-                  "Cosmo Jets",
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 27,
-                    fontWeight: FontWeight.bold,
-                    letterSpacing: 1.15,
-                  ),
-                ),
-                Text(
-                  "Deadline - 12 July 2020",
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 12,
-                    letterSpacing: 1,
-                  ),
-                )
-              ],
-            ),
-            Container(
-              child: Column(
+      body: Padding(
+        padding: const EdgeInsets.fromLTRB(8.0, 0, 8.0, 0),
+        child: Container(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              SizedBox(height: 10),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
-                  Row(
-                    children: <Widget>[
-                      Text(
-                        "Progress",
-                        style: TextStyle(
-                          fontSize: 18,
-                        ),
-                      ),
-                      Text("78%",
-                          style: TextStyle(
-                            fontSize: 18,
-                          ))
-                    ],
+                  Text(
+                    "Cosmo Jets",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 27,
+                      fontWeight: FontWeight.bold,
+                      letterSpacing: 1.15,
+                    ),
                   ),
-                  Image(image: AssetImage("assets/slider 5.png"))
+                  Text(
+                    "Deadline - 12 July 2020",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 12,
+                      letterSpacing: 1,
+                    ),
+                  )
                 ],
               ),
-            )
-          ],
+              SizedBox(height: 15),
+              Container(
+                child: Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Column(
+                    children: <Widget>[
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: <Widget>[
+                          Text(
+                            "Progress",
+                            style: TextStyle(
+                              fontSize: 18,
+                            ),
+                          ),
+                          Text("78%",
+                              style: TextStyle(
+                                fontSize: 18,
+                              ))
+                        ],
+                      ),
+                      SizedBox(height: 10),
+                      Image(image: AssetImage("assets/slider 5.png"))
+                    ],
+                  ),
+                ),
+              ),
+              Text(
+                "Members",
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold,
+                  letterSpacing: 1.15,
+                ),
+              ),
+              Container(
+                  child: Image(
+                image: AssetImage(
+                  "assets/avatars.png",
+                ),
+              ))
+            ],
+          ),
         ),
       ),
     );
