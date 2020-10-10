@@ -29,7 +29,56 @@ class _CosmoJetState extends State<CosmoJet> {
           )
         ],
       ),
-      body: ,
+      body: Container(
+        child: Column(
+          children: <Widget>[
+            SizedBox(height: 10),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                Text(
+                  "Cosmo Jets",
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 27,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 1.15,
+                  ),
+                ),
+                Text(
+                  "Deadline - 12 July 2020",
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 12,
+                    letterSpacing: 1,
+                  ),
+                )
+              ],
+            ),
+            Container(
+              child: Column(
+                children: <Widget>[
+                  Row(
+                    children: <Widget>[
+                      Text(
+                        "Progress",
+                        style: TextStyle(
+                          fontSize: 18,
+                        ),
+                      ),
+                      Text("78%",
+                          style: TextStyle(
+                            fontSize: 18,
+                          ))
+                    ],
+                  ),
+                  Image(image: AssetImage("assets/slider 5.png"))
+                ],
+              ),
+            )
+          ],
+        ),
+      ),
     );
   }
 }
