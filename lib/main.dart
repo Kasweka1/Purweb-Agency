@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'cosmo_jet.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -76,7 +77,10 @@ class Home extends StatelessWidget {
                           child: InkWell(
                             splashColor: Colors.blue.withAlpha(30),
                             onTap: () {
-                              print('Card tapped.');
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => CosmoJet()));
                             },
                             // made column for widgets to put
                             child: Container(
@@ -134,7 +138,10 @@ class Home extends StatelessWidget {
                           child: InkWell(
                             splashColor: Colors.blue.withAlpha(30),
                             onTap: () {
-                              print('Card tapped.');
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => CosmoJet()));
                             },
                             child: Container(
                               width: 163,
@@ -195,7 +202,10 @@ class Home extends StatelessWidget {
                           child: InkWell(
                             splashColor: Colors.blue.withAlpha(30),
                             onTap: () {
-                              print('Card tapped.');
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => CosmoJet()));
                             },
                             // made column for widgets to put
                             child: Container(
@@ -253,7 +263,10 @@ class Home extends StatelessWidget {
                           child: InkWell(
                             splashColor: Colors.blue.withAlpha(30),
                             onTap: () {
-                              print('Card tapped.');
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => CosmoJet()));
                             },
                             child: Container(
                               width: 163,
@@ -373,13 +386,18 @@ class Home extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             IconButton(
-                icon: Icon(Icons.home, color: Colors.blue[600], size: 30,),
+                icon: Icon(
+                  Icons.home,
+                  color: Colors.blue[600],
+                  size: 30,
+                ),
                 onPressed: () {}),
             IconButton(icon: Icon(Icons.chat, size: 30), onPressed: () {}),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: IconButton(
-                  icon: Icon(Icons.add_circle, color: Colors.blue[600], size: 45),
+                  icon:
+                      Icon(Icons.add_circle, color: Colors.blue[600], size: 45),
                   onPressed: () {}),
             ),
             IconButton(icon: Icon(Icons.phone, size: 30), onPressed: () {}),
