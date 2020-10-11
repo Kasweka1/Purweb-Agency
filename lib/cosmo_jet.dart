@@ -145,7 +145,7 @@ class _CosmoJetState extends State<CosmoJet> {
                   onTap: () {},
                   child: Container(
                     width: 340,
-                    height: 100,
+                    height: 120,
                     child: Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Column(
@@ -179,8 +179,37 @@ class _CosmoJetState extends State<CosmoJet> {
                                 letterSpacing: 1,
                               ),
                             ),
+                            SizedBox(height: 10),
                             Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: <Widget>[
+                                Container(
+                                  child: Row(
+                                    children: <Widget>[
+                                      Icon(Icons.attachment),
+                                SizedBox(width: 5),
+                                Text("3"),
+                                SizedBox(width: 19),
+                                Icon(Icons.comment),
+                                SizedBox(width: 5),
+                                Text("21"),
+                                    ],
+                                  ),
+                                ),
+                                Container(
+                                  child: RaisedButton(
+                                    color: Color.fromRGBO(244,195, 231, 1),
+                                    child: Text(
+                                      "Meet",
+                                      style: TextStyle(
+                                        color: Color.fromRGBO(180, 35, 185, 1),
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 18,
+                                      ),),
+                                    onPressed: (){}
+                                    
+                                    ),
+                                )
                                 
                               ],
                             )
