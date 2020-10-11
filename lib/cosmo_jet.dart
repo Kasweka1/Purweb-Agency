@@ -139,6 +139,56 @@ class _CosmoJetState extends State<CosmoJet> {
                   ),
                 ),
               ),
+              Card(
+                child: InkWell(
+                  splashColor: Colors.blue.withAlpha(30),
+                  onTap: () {},
+                  child: Container(
+                    width: 340,
+                    height: 100,
+                    child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: <Widget>[
+                                Text(
+                                  "Deisgn UI Concept",
+                                  style: TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                Text(
+                                  "16h",
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 12,
+                                    letterSpacing: 1,
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Text(
+                              "12 july 2020",
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontSize: 12,
+                                letterSpacing: 1,
+                              ),
+                            ),
+                            Row(
+                              children: <Widget>[
+                                
+                              ],
+                            )
+                          ],
+                        )),
+                  ),
+                ),
+              ),
             ],
           ),
         ),
