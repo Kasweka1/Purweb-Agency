@@ -43,7 +43,7 @@ class _CosmoJetState extends State<CosmoJet> {
                     "Cosmo Jets",
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 27,
+                      fontSize: 21,
                       fontWeight: FontWeight.bold,
                       letterSpacing: 1.15,
                     ),
@@ -52,7 +52,7 @@ class _CosmoJetState extends State<CosmoJet> {
                     "Deadline - 12 July 2020",
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 12,
+                      fontSize: 10,
                       letterSpacing: 1,
                     ),
                   )
@@ -70,12 +70,12 @@ class _CosmoJetState extends State<CosmoJet> {
                           Text(
                             "Progress",
                             style: TextStyle(
-                              fontSize: 18,
+                              fontSize: 14,
                             ),
                           ),
                           Text("78%",
                               style: TextStyle(
-                                fontSize: 18,
+                                fontSize: 14,
                               ))
                         ],
                       ),
@@ -89,7 +89,7 @@ class _CosmoJetState extends State<CosmoJet> {
                 "Members",
                 style: TextStyle(
                   color: Colors.black,
-                  fontSize: 30,
+                  fontSize: 24,
                   fontWeight: FontWeight.bold,
                   letterSpacing: 1.15,
                 ),
@@ -108,7 +108,7 @@ class _CosmoJetState extends State<CosmoJet> {
                 "Tasks",
                 style: TextStyle(
                   color: Colors.black,
-                  fontSize: 32,
+                  fontSize: 25,
                   fontWeight: FontWeight.bold,
                   letterSpacing: 1.15,
                 ),
@@ -128,7 +128,7 @@ class _CosmoJetState extends State<CosmoJet> {
                           Text(
                             "To Do",
                             style: TextStyle(
-                              fontSize: 20,
+                              fontSize: 16,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
@@ -145,7 +145,7 @@ class _CosmoJetState extends State<CosmoJet> {
                   onTap: () {},
                   child: Container(
                     width: 340,
-                    height: 120,
+                    height: 115,
                     child: Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Column(
@@ -157,7 +157,7 @@ class _CosmoJetState extends State<CosmoJet> {
                                 Text(
                                   "Deisgn UI Concept",
                                   style: TextStyle(
-                                    fontSize: 20,
+                                    fontSize: 17.5,
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
@@ -204,7 +204,7 @@ class _CosmoJetState extends State<CosmoJet> {
                                       style: TextStyle(
                                         color: Color.fromRGBO(180, 35, 185, 1),
                                         fontWeight: FontWeight.bold,
-                                        fontSize: 18,
+                                        fontSize: 17,
                                       ),),
                                     onPressed: (){}
                                     

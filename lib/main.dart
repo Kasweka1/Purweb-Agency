@@ -19,7 +19,7 @@ class Home extends StatelessWidget {
           style: TextStyle(
             color: Colors.black,
             fontWeight: FontWeight.bold,
-            fontSize: 23.5,
+            fontSize: 20,
           ),
         ),
         backgroundColor: Colors.white,
@@ -51,7 +51,7 @@ class Home extends StatelessWidget {
                     "Projects",
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 28,
+                      fontSize: 22,
                       fontWeight: FontWeight.bold,
                       letterSpacing: 1.15,
                     ),
@@ -60,7 +60,7 @@ class Home extends StatelessWidget {
                     "see more",
                     style: TextStyle(
                       color: Color.fromRGBO(60, 175, 235, 1),
-                      fontSize: 18,
+                      fontSize: 14,
                       fontWeight: FontWeight.bold,
                     ),
                   )
@@ -97,7 +97,7 @@ class Home extends StatelessWidget {
                                     Text(
                                       "Cosmo Jet",
                                       style: TextStyle(
-                                          fontSize: 15,
+                                          fontSize: 12,
                                           fontWeight: FontWeight.bold),
                                     ),
                                     Image(
@@ -113,12 +113,12 @@ class Home extends StatelessWidget {
                                         Text(
                                           "Progress",
                                           style: TextStyle(
-                                            fontSize: 12.0,
+                                            fontSize: 11.0,
                                           ),
                                         ),
                                         Text("28%",
                                             style: TextStyle(
-                                              fontSize: 12.0,
+                                              fontSize: 11.0,
                                             ))
                                       ],
                                     ),
@@ -157,7 +157,7 @@ class Home extends StatelessWidget {
                                     Text(
                                       "Sports App",
                                       style: TextStyle(
-                                          fontSize: 15,
+                                          fontSize: 12,
                                           fontWeight: FontWeight.bold),
                                     ),
                                     Image(
@@ -173,12 +173,12 @@ class Home extends StatelessWidget {
                                         Text(
                                           "Progress",
                                           style: TextStyle(
-                                            fontSize: 12.0,
+                                            fontSize: 11.0,
                                           ),
                                         ),
                                         Text("76%",
                                             style: TextStyle(
-                                              fontSize: 12.0,
+                                              fontSize: 11.0,
                                             ))
                                       ],
                                     ),
@@ -222,7 +222,7 @@ class Home extends StatelessWidget {
                                     Text(
                                       "Bookinist",
                                       style: TextStyle(
-                                          fontSize: 15,
+                                          fontSize: 12,
                                           fontWeight: FontWeight.bold),
                                     ),
                                     Image(
@@ -238,12 +238,12 @@ class Home extends StatelessWidget {
                                         Text(
                                           "Progress",
                                           style: TextStyle(
-                                            fontSize: 12.0,
+                                            fontSize: 11.0,
                                           ),
                                         ),
                                         Text("56%",
                                             style: TextStyle(
-                                              fontSize: 12.0,
+                                              fontSize: 11.0,
                                             ))
                                       ],
                                     ),
@@ -282,7 +282,7 @@ class Home extends StatelessWidget {
                                     Text(
                                       "Music Player",
                                       style: TextStyle(
-                                          fontSize: 15,
+                                          fontSize: 12,
                                           fontWeight: FontWeight.bold),
                                     ),
                                     Image(
@@ -298,12 +298,12 @@ class Home extends StatelessWidget {
                                         Text(
                                           "Progress",
                                           style: TextStyle(
-                                            fontSize: 12.0,
+                                            fontSize: 11.0,
                                           ),
                                         ),
                                         Text("51%",
                                             style: TextStyle(
-                                              fontSize: 12.0,
+                                              fontSize: 11.0,
                                             ))
                                       ],
                                     ),
@@ -331,7 +331,7 @@ class Home extends StatelessWidget {
                     "Upcoming Events",
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 25,
+                      fontSize: 19,
                       fontWeight: FontWeight.bold,
                       letterSpacing: 1.15,
                     ),
@@ -340,7 +340,7 @@ class Home extends StatelessWidget {
                     "see more",
                     style: TextStyle(
                       color: Color.fromRGBO(60, 175, 235, 1),
-                      fontSize: 18,
+                      fontSize: 14,
                       fontWeight: FontWeight.bold,
                     ),
                   )
@@ -364,13 +364,13 @@ class Home extends StatelessWidget {
                                   Text(
                                     "Dribble Meeting 2020",
                                     style: TextStyle(
-                                      fontSize: 20,
+                                      fontSize: 16,
                                     ),
                                   ),
                                   Text("12 July 2020",
                                       style: TextStyle(
                                         color: Colors.grey[700],
-                                        fontSize: 17,
+                                        fontSize: 13,
                                       )),
                                 ]),
                           ],
